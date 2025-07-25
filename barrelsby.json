@@ -1,0 +1,15 @@
+{
+	"directory": [
+		"./src/features/todo-list",
+		"./src/pages",
+		"./src/shared/ui",
+		"./src/shared/utils"
+	],
+	"delete": true,
+	"exclude": [".*\\.test\\.ts$"],
+	"structure": "flat",
+	"location": "top",
+	"noSemicolon": false,
+	"singleQuotes": true,
+	"noHeader": true
+}

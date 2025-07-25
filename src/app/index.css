@@ -1,0 +1,88 @@
+@import 'tailwindcss';
+
+:root {
+	--radius: 0.75rem;
+	--font-sans: 'Inter', 'Avenir Next Cyr', Arial, sans-serif;
+
+	--background: #f6f9fc; /* очень светлый, не белый */
+	--foreground: #bbcfe1; /* глубокий синий-черный */
+	--primary: #3b82f6; /* яркий, но не кислотный синий */
+	--primary-foreground: #fff;
+	--card: #fff; /* чисто белая для карточек */
+	--card-foreground: #262d47;
+	--border: #e5e7eb; /* светлый border-gray-200 */
+	--muted: #f1f5f9; /* серо-голубой фон для инпутов */
+	--muted-foreground: #64748b; /* серо-синий текст для второстепенного */
+	--success: #10b981; /* современный зелёный */
+	--destructive: #ef4444; /* яркий красный */
+	--warning: #fbbf24; /* мягкий желтый */
+	--accent: #6366f1; /* насыщенный фиолетово-синий */
+}
+
+@layer base {
+  body {
+    background-color: var(--foreground);
+    color: var(--foreground);
+    font-family: var(--font-sans);
+    min-height: 100vh;
+  }
+}
+@layer utilities {
+	.bg-card {
+		background-color: var(--card);
+	}
+	.bg-primary {
+		background-color: var(--primary);
+	}
+	.bg-muted {
+		background-color: var(--muted);
+	}
+	.bg-success {
+		background-color: var(--success);
+	}
+	.bg-destructive {
+		background-color: var(--destructive);
+	}
+	.bg-warning {
+		background-color: var(--warning);
+	}
+	.bg-accent {
+		background-color: var(--accent);
+	}
+
+	.text-primary {
+		color: var(--primary);
+	}
+	.text-muted-foreground {
+		color: var(--muted-foreground);
+	}
+	.text-card-foreground {
+		color: var(--card-foreground);
+	}
+	.text-success {
+		color: var(--success);
+	}
+	.text-destructive {
+		color: var(--destructive);
+	}
+	.text-warning {
+		color: var(--warning);
+	}
+	.text-accent {
+		color: var(--accent);
+	}
+
+	.border-primary {
+		border-color: var(--primary);
+	}
+	.border-card {
+		border-color: var(--card);
+	}
+	.border-accent {
+		border-color: var(--accent);
+	}
+
+	.rounded-main {
+		border-radius: var(--radius);
+	}
+}
